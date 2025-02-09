@@ -14,7 +14,19 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@playground/design-system": ["dist/libs/design-system"],
+      "@playground/design-system-angular": [
+        "libs/design-system-angular/src/index.ts"
+      ],
+      "@playground/design-system-react": [
+        "libs/design-system-react/src/index.ts"
+      ],
+      "@playground/design-system/*": [
+        "dist/libs/design-system/dist/components/*"
+      ],
+      "@playground/design-system/loader": ["dist/libs/design-system/loader"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
